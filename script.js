@@ -7,6 +7,7 @@ const bottoneIncr = document.getElementById("incrementa"); // Corretto l'ID
 
 let numero = 0;
 let numero_incremento = 1;
+let limite = 999999999;
 
 function aggiornaIncr(){
     incrementoEl.textContent = numero_incremento; 
@@ -18,6 +19,9 @@ function aggiornaNumero() {
 
 bottonePlus.addEventListener("click", () => {
     numero = numero + numero_incremento;
+    if (numero > limite){
+        numero = limite;
+    }
     aggiornaNumero();
 });
 

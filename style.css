@@ -39,6 +39,16 @@ __________________________________ */
     margin: auto;
 }
 
+#incrementa{
+    padding: 12px 18px;
+    font: 3.2vh;
+    margin-top: 12px;
+    text-transform: uppercase;
+    border-radius: 999px;
+    color:white;
+    background-color: crimson;
+}
+
 .pokeball img{
     margin-top: 12px;
     height: 80px;
@@ -93,7 +103,7 @@ __________________________________ */
 .row{
     align-items:center;
     text-align:center;
-    row-gap: 48px;
+    row-gap: 6vh;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;  
