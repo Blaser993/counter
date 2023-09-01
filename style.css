@@ -10,7 +10,7 @@
 
 
 body{
-    padding-top: 10%;
+    padding-top: 10vh;
     height: 100dvh;
     background-image: url("./img/sfondo1.png") ;
     background-size: cover;
@@ -34,6 +34,15 @@ __________________________________ */
     margin: auto;
 }
 
+.pokeball img{
+    margin-top: 12px;
+    height: 80px;
+}
+
+.minus img{
+    margin-left: auto;
+}
+
 .button {
     display: block;
     background-color: transparent; /* Sfondo trasparente */    
@@ -42,25 +51,27 @@ __________________________________ */
   }
 
   .scoreboard {
-    width: 40%;
+    width: 25vw;
     display: inline-block;
     background-color: #333;
-
-    padding: 10px;
+    padding: calc(0.8vh + 0.8vw);
     border-radius: 12px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
   
   .score {
     width: 100%;
-    font-family: 'Silkscreen', cursive;
-    font-size: 3.2vw;
-
+    padding-bottom: 4px;
     color:rgb(46, 252, 149);
     position: relative;
     border-radius: 5px;
     background-color: #6a6a6a;
     display: inline-block;
+  }
+
+  #number{
+    font-family: 'Silkscreen', cursive;
+    font-size: 3.2vw;
   }
   
 
