@@ -1,0 +1,170 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding:0px;
+}
+
+
+body{
+    padding-top: 10%;
+    height: 100dvh;
+    background-image: url("./img/sfondo1.png") ;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+img{
+    display: inline-block;
+    height: 100%;
+}
+
+
+/* _______________________________
+
+---------------ELEMENTS--------------
+__________________________________ */
+
+
+.pokeball{
+    align-self: stretch;
+    margin: auto;
+}
+
+.button {
+    display: block;
+    background-color: transparent; /* Sfondo trasparente */    
+    filter: contrast(1) drop-shadow(0px 0px 2px black) drop-shadow(5px 5px 4px rgb(53, 53, 53)) ;
+
+  }
+
+  .scoreboard {
+    width: 40%;
+    display: inline-block;
+    background-color: #333;
+
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .score {
+    width: 100%;
+    font-family: 'Silkscreen', cursive;
+    font-size: 3.2vw;
+
+    color:rgb(46, 252, 149);
+    position: relative;
+    border-radius: 5px;
+    background-color: #6a6a6a;
+    display: inline-block;
+  }
+  
+
+
+/* _______________________________
+
+---------------LAYOUT--------------
+__________________________________ */
+
+.container{
+    max-width: 1000px;
+    margin: auto;
+}
+
+.row{
+    align-items:center;
+    text-align:center;
+    row-gap: 48px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;  
+}
+
+.col{
+    height:100%;
+    border: red 1px solid;
+} 
+
+.col-auto{ 
+    flex-grow: 1;
+}
+
+.col-1{
+    flex-basis: calc(100%/12*1);
+}
+
+.col-2{
+    flex-basis: calc(100%/12*2);
+}
+
+.col-3{
+    flex-basis: calc(100%/12*3);
+}
+
+.col-4{
+    flex-basis: calc(100%/12*4);
+}
+
+.col-5{
+    flex-basis: calc(100%/12*5);
+}
+
+.col-6{
+    flex-basis: calc(100%/12*6);
+}
+
+.col-7{
+    flex-basis: calc(100%/12*7);
+}
+
+.col-8{
+    flex-basis: calc(100%/12*8);
+}
+
+.col-9{
+    flex-basis: calc(100%/12*9);
+}
+
+.col-10{
+    flex-basis: calc(100%/12*10);
+}
+
+.col-11{
+    flex-basis: calc(100%/12*11);
+}
+
+.col-12{
+    flex-basis: 100%;
+}
+
+.image-container {
+  display: inline-block; /* o altra modalità di visualizzazione a tua scelta */
+  position: relative;
+}
+
+.image-container::before {
+  content: "";
+  background-image: url("path/alla/tua/immagine.png");
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: brightness(0); /* Rende invisibili i pixel trasparenti */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Regola i valori per ottenere l'ombra desiderata */
+  pointer-events: none; /* Per fare in modo che l'ombra non interferisca con gli eventi del contenuto */
+}
+
+  
+  
+  
+  
+  
+
+
+  
+  
