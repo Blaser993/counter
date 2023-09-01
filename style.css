@@ -10,7 +10,7 @@
 
 
 body{
-    padding-top: 10vh;
+    padding-top: 15vh;
     height: 100dvh;
     background-image: url("./img/sfondo1.png") ;
     background-size: cover;
@@ -20,6 +20,11 @@ body{
 img{
     display: inline-block;
     height: 100%;
+}
+
+nav{
+    justify-content:center;
+    width: 100%;
 }
 
 
