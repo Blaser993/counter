@@ -59,7 +59,7 @@ __________________________________ */
 }
 
 .button {
-    background-color: transparent; /* Sfondo trasparente */    
+    background-color: transparent;    
     filter: contrast(1) drop-shadow(0px 0px 2px black) drop-shadow(5px 5px 4px rgb(53, 53, 53)) ;
 
 }
@@ -73,27 +73,27 @@ __________________________________ */
 }
 
 .scoreboard {
-width: 25vw;
-display: inline-block;
-background-color: #333;
-padding: calc(0.8vh + 0.8vw);
-border-radius: 12px;
-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 25vw;
+    display: inline-block;
+    background-color: #333;
+    padding: calc(0.8vh + 0.8vw);
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .score {
-width: 100%;
-padding-bottom: 4px;
-color:rgb(46, 252, 149);
-position: relative;
-border-radius: 5px;
-background-color: #6a6a6a;
-display: inline-block;
+    width: 100%;
+    padding-bottom: 4px;
+    color:rgb(46, 252, 149);
+    position: relative;
+    border-radius: 5px;
+    background-color: #6a6a6a;
+    display: inline-block;
 }
 
 #numero{
-font-family: 'Silkscreen', cursive;
-font-size: 3.2vw;
+    font-family: 'Silkscreen', cursive;
+    font-size: 3.2vw;
 }
   
 
@@ -119,6 +119,7 @@ __________________________________ */
 
 .col{
     height:100%;
+    border: red 1px solid;
 } 
 
 .col-auto{ 
@@ -174,9 +175,41 @@ __________________________________ */
 }
 
 
+/* _______________________________
 
+---------------RESPONSIVE--------------
+__________________________________ */
   
-  
+@media screen and (max-width: 768px) {
+ 
+
+   .tabellone{
+    order: -2;
+   }
+
+   .scoreboard{
+    min-width: 50%;
+   }
+
+
+   #numero{
+    font-size: 48px;
+   }
+
+   .minus, .plus{
+    order:3;
+    flex-basis: calc(100%/12*6);
+   }
+
+   .minus img, .plus img{
+    max-height: 150px;
+   }
+
+   .pokeball, .reset{
+    order:5;
+    flex-basis: calc(100%/12*6);
+   }
+}
   
   
   
