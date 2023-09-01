@@ -201,12 +201,22 @@ __________________________________ */
    }
 
    .minus img, .plus img{
-    max-height: 150px;
+    max-width: 160px;
+   }
+
+   .row{
+    justify-content: center;
+    align-items: center;
    }
 
    .pokeball, .reset{
     order:5;
-    flex-basis: calc(100%/12*6);
+    flex-basis: calc(100%/12*4);
+
+   }
+
+   .pokeball{
+    margin: 0;
    }
 }
   
